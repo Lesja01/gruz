@@ -1,0 +1,287 @@
+@import "../bourbon/_bourbon"
+@import "_fonts.sass"
+@import "_vars.sass"
+
+.hidden
+	display: none
+
+body
+
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+	color: #222
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+	font-family: "OpenSansLight", sans-serif
+	font-weight: normal
+
+h1,
+.h1
+	font-size: em(28)
+	line-height: 1.15
+
+.main-head
+	background-image: url(img/bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	min-height: 80vh
+	background-position: top center
+	max-width: 100%
+	overflow: hidden
+
+
+	
+.mnu-line
+	padding-top: em(30)
+
+.logo
+	display: block
+	width: 150px
+	img
+		width: 100%
+
+nav, .header-content, .footer-nav
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+
+.main-mnu
+	text-align: center
+	font-size: em(16)
+	> ul
+		> li
+			> a
+				display: block
+				padding: em(20px) em(50px)
+				color: #7e91a4
+				@include mt(.2s)
+				&:hover
+					color: #414e5b
+
+			&.active
+				a
+					color: #414e5b
+					text-decoration: underline
+
+.phone
+	text-align: right
+
+
+.phone-wrap
+	color: #35362E
+	font-family: "Exo2Bold",sans-serif
+	font-size: em(30px)
+	padding-right: 0px
+
+.fa 
+	font-size: em(60px)
+	position: relative
+
+.callback
+	font-size: em(17px)
+	padding-top: 3px
+	border-bottom: 1px dashed  white
+	text-decoration: none
+	color: white
+	@include mt(.2s)
+	&:hover
+		text-decoration: none
+
+
+.header-content
+	background: rgba(230, 227, 218, 0.7)
+	// box-shadow: 2px 2px 4px #E6E3DA
+	border: 1px dashed gray
+	width: 100%
+	text-align: center
+	margin: 5% 50% 5% 5%
+	padding: em(20px)
+	font-size: em(20)
+	text-shadow: 1px 2px 3px black
+	text-transform: uppercase
+	letter-spacing: 0.3em
+	border-radius: 25px
+	h1
+		@include bigFont($btn)
+	ul 
+		margin: em(25px)
+	li 
+		color: white
+		display: block
+		font-size: em(14)
+		margin: 10px
+		&:last-child
+			margin-bottom: em(30px)
+		text-align: left
+
+.fa-check-square-o
+	margin-right: em(10px)
+	
+
+.btn-contact
+	&:hover
+		text-decoration: none
+	background-color: $btn
+	text-align: center
+	font-size: em(10px) 
+	margin: 0 17%	
+	padding: 10px 20px
+	text-transform: uppercase
+	color: white
+	letter-spacing: 2px
+	border-radius: 3px
+	&:hover 
+		background-color: #59F064
+	&:active
+		background-color: #3EAE47
+	
+
+
+/* <!-- Toggle mnu -->*/
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 17px
+	position: absolute
+	top: 0
+	right: 0px
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+	span:after
+		top: 18px
+	span 
+		position: relative
+		display: block
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: gray
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+	&.on span 
+		background-color: transparent
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.hidden-mnu
+	background-color: $light
+	margin: em(20px) 0
+	border: 4px double $dark
+	text-transform: uppercase
+	li 
+		display: block
+		&:hover 
+			background-color: $btn
+			border: 2px outset $light
+		&:active
+			background-color: #3EAE47
+			border: 2px inset $light
+
+	ul 
+		padding: em(15px)
+
+.s-wide
+	padding-bottom: em(60px)
+	padding-top: em(60px)
+	margin: 0px
+	padding: 0px
+	left: 0px	
+
+.s-adw 
+	margin-top: 0
+
+.s-adw-item
+	font-family: "OpenSansLigth", sans-serif
+	h1
+		font-size: em(25px)
+		font-family: "Exo2Bold", sans-serif
+	span
+		@include bigFont($btn)
+		width: 40px
+		
+	p
+		font-family: "OpenSansRegular", sans-serif
+		font-size: em(15px)
+		text-transform: uppercase
+		color: $dark
+
+.s-dark
+	background-color: $light
+
+
+//Стили формы ввода
+.applic
+	position: absolute
+	text-align: center
+	padding: 20px
+	top: 0px
+	vertical-align: top
+	background-color: $light
+	left: 50%
+	margin-left: -200px
+	border: 2px solid #fff
+	border-radius: 40px
+	width: 400px
+	h1
+		font-family: "LatoBold", sans-serif
+		font-size: 24px
+input, textarea,button
+	outline: none
+	resize: none
+//Стили полей для ввода
+#applicationName, #applicationEmail, #applicationTelephone, #applicationText
+	width: 100%
+	height: 60px
+	background: none
+	margin-top: 15px
+	border: 2px solid #fff
+	border-radius: 40px
+	text-align: center
+	font-size: 18px
+#applicationText
+	height: 150px
+	background-color: white
+//Стили полей при клике по ним
+#applicationName,#applicationEmail,#applicationTelephone
+	&:focus
+		border: 1px solid lightgreen
+		border-radius: 40px
+	textarea
+		background-color: #fff
+		text-shadow: 0 1px 1px rgba(0, 0, 0, .3)
+
+
+//Стили для кнопки
+.applicationButton 
+	margin-top: 25px
+	background: #30ad64
+	border: none
+	width: 100%
+	height: 73px
+	border-radius: 40px
+	color: #fff
+	font-size: 24px
+	text-transform: uppercase
+	font-family: 'PT Sans', sans-serif
+	cursor: pointer 
+	&:hover 
+		background: #d68c18
+		transition: .6
+.mfp-content
+	vertical-align: top!important
+	top: 20px

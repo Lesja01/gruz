@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Exo2Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../app/fonts/Exo2Bold/Exo2Bold.eot?#iefix") format("embedded-opentype"), url("../app/fonts/Exo2Bold/Exo2Bold.woff") format("woff"), url("../app/fonts/Exo2Bold/Exo2Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../app/fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../app/fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../app/fonts/OpenSansBold/OpenSansBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSansLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../app/fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../app/fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../app/fonts/OpenSansLight/OpenSansLight.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../app/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../app/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../app/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSansSemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype"); }
+.hidden {
+  display: none; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+  color: #222; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "OpenSansLight", sans-serif;
+  font-weight: normal; }
+
+h1,
+.h1 {
+  font-size: 1.75em;
+  line-height: 1.15; }
+
+.main-head {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  background-position: top center;
+  max-width: 100%;
+  overflow: hidden; }
+
+.mnu-line {
+  padding-top: 1.875em; }
+
+.logo {
+  display: block;
+  width: 150px; }
+  .logo img {
+    width: 100%; }
+
+nav ul, .header-content ul, .footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+nav li, .header-content li, .footer-nav li {
+  display: inline-block; }
+
+.main-mnu {
+  text-align: center;
+  font-size: 1em; }
+  .main-mnu > ul > li > a {
+    display: block;
+    padding: 1.25em 3.125em;
+    color: #7e91a4;
+    transition: all 0.2s ease; }
+    .main-mnu > ul > li > a:hover {
+      color: #414e5b; }
+  .main-mnu > ul > li.active a {
+    color: #414e5b;
+    text-decoration: underline; }
+
+.phone {
+  text-align: right; }
+
+.phone-wrap {
+  color: #35362E;
+  font-family: "Exo2Bold", sans-serif;
+  font-size: 1.875em;
+  padding-right: 0px; }
+
+.fa {
+  font-size: 3.75em;
+  position: relative; }
+
+.callback {
+  font-size: 1.0625em;
+  padding-top: 3px;
+  border-bottom: 1px dashed white;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease; }
+  .callback:hover {
+    text-decoration: none; }
+
+.header-content {
+  background: rgba(230, 227, 218, 0.7);
+  border: 1px dashed gray;
+  width: 100%;
+  text-align: center;
+  margin: 5% 50% 5% 5%;
+  padding: 1.25em;
+  font-size: 1.25em;
+  text-shadow: 1px 2px 3px black;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border-radius: 25px; }
+  .header-content h1 {
+    font-family: "OpenSansBold", sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #54D65E;
+    text-shadow: 1px 2px 5px black;
+    text-transform: uppercase;
+    font-size: 1.6875em; }
+  .header-content ul {
+    margin: 1.5625em; }
+  .header-content li {
+    color: white;
+    display: block;
+    font-size: 0.875em;
+    margin: 10px;
+    text-align: left; }
+    .header-content li:last-child {
+      margin-bottom: 1.875em; }
+
+.fa-check-square-o {
+  margin-right: 0.625em; }
+
+.btn-contact {
+  background-color: #54D65E;
+  text-align: center;
+  font-size: 0.625em;
+  margin: 0 17%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 3px; }
+  .btn-contact:hover {
+    background-color: #59F064; }
+  .btn-contact:active {
+    background-color: #3EAE47; }
+
+/* <!-- Toggle mnu --> */
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 17px;
+  position: absolute;
+  top: 0;
+  right: 0px; }
+  .toggle-mnu span:after, .toggle-mnu span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px; }
+  .toggle-mnu span:after {
+    top: 18px; }
+  .toggle-mnu span {
+    position: relative;
+    display: block; }
+  .toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px; }
+  .toggle-mnu.on span {
+    background-color: transparent; }
+  .toggle-mnu.on span:before {
+    transform: rotate(45deg) translate(-1px, 0px); }
+  .toggle-mnu.on span:after {
+    transform: rotate(-45deg) translate(6px, -7px); }
+
+.hidden-mnu {
+  background-color: #F3F4F6;
+  margin: 1.25em 0;
+  border: 4px double #615A38;
+  text-transform: uppercase; }
+  .hidden-mnu li {
+    display: block; }
+    .hidden-mnu li:hover {
+      background-color: #54D65E;
+      border: 2px outset #F3F4F6; }
+    .hidden-mnu li:active {
+      background-color: #3EAE47;
+      border: 2px inset #F3F4F6; }
+  .hidden-mnu ul {
+    padding: 0.9375em; }
+
+.s-wide {
+  padding-bottom: 3.75em;
+  padding-top: 3.75em; }
+
+.s-adw {
+  margin-top: 0; }
+
+.s-adw-item {
+  font-family: "OpenSansLigth", sans-serif; }
+  .s-adw-item h1 {
+    font-size: 1.5625em;
+    font-family: "Exo2Bold", sans-serif; }
+  .s-adw-item span {
+    font-family: "OpenSansBold", sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #54D65E;
+    text-shadow: 1px 2px 5px black;
+    text-transform: uppercase;
+    font-size: 1.6875em;
+    width: 40px; }
+  .s-adw-item p {
+    font-family: "Exo2Bold", sans-serif;
+    font-size: 0.9375em;
+    text-transform: uppercase;
+    color: #615A38; }
+
+.s-dark {
+  background-color: #F3F4F6; }
+
+.applic {
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #F3F4F6;
+  border: 1px solid #615A38;
+  position: absolute; }
+
+/*# sourceMappingURL=header.css.map */

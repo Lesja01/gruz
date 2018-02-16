@@ -1,0 +1,329 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Грузоперевозки</title>
+
+	<meta name=\"description\" content=\"Грузоперевозки\">
+	<meta name=\"author\" content=\"SitePoint\">
+	
+	<link rel="stylesheet" type ="text/css" href="libs/bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script type="text/javascript" src=libs/bootstrap/js/bootstrap.js></script>
+	
+	<!-- Load CSS Compilled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="_main.css">
+	</noscript>
+  <!--[if lt IE 9]>
+    <script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>
+<![endif]-->
+
+
+
+</head>
+
+<body>
+	
+	<header class="main-head">
+		
+		<div class="container">
+			<div class="row">
+				<div class="mnu-line clearfix">
+					<div class="col-lg-2 col-md-6  col-sm-6 col-xs-12">
+						<a href="" class="logo"><img src="img/logowithout.svg" alt="logo"></a>
+					</div>
+					
+					<div class="col-lg-3 col-lg-push-7 col-md-6 col-sm-6 col-xs-12">
+						<div class="phone">
+							<div class="phone-wrap">
+								<i class="fa fa-mobile" aria-hidden="true"></i>
+								+375(29)6795766
+							</div>
+							<a href="#popupApplic" class="callback popup-with-form">Заказать обратный звонок</a>
+						</div>
+						
+						<a href="#" class="toggle-mnu on hidden-lg"><span></span></a>
+						
+					</div>
+
+					<div class="col-sm-7 col-md-pull-3">
+						<nav class="main-mnu hidden-md hidden-sm hidden-xs">
+							<ul>
+								<li class="active"><a href="#" >Главная</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="col-xs-12">
+						<nav class="main-mnu hidden-mnu hidden-lg clearfix">
+							<ul>
+								<li class="active"><a href="#" >Главная</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div class="header-content">
+				<h1 class="big-text">Грузоперевозки  по странам СНГ и Республике Беларусь</h1>
+				<ul>
+					<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Работаем без предоплаты</li>
+					<li><i class="fa fa-check-square-o" aria-hidden="true"></i>24/7</li>
+					<li><i class="fa fa-check-square-o" aria-hidden="true"></i>скидки постоянным клиентам</li>
+				</ul>
+
+				<a href="#popupApplic" class="btn-contact popup-with-form"> Оформить заявку </a>
+			</div>
+
+			<div id="popupApplic" class="applic popup mfp-hide white-popup-block">
+						<form id="application" action="mail.php" method="POST">
+							<input type="hidden" name="project_name" value="Груз">
+							<input type="hidden" name="admin_email" value="Lesja01@mail.ru">
+							<input type="hidden" name="form_subject" value="Форма заказа">
+							<h1> КОНТАКТНЫЕ ДАННЫЕ</h1>
+							<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+  							<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required />
+   							<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required/>
+   							<textarea name="message" id="applicationText" form="application" type="message" ></textarea>
+							<button class="applicationButton" type="submit" form="application">Отправить </button>
+						</form>
+			</div>
+					
+			<section class="s-wide s-adw">
+				<div class="container">
+					<div class="row">
+						<div class="s-adw-item">
+							<div class="col-md-3 col-sm-3">
+								<h1><span class="big-text" data-count="5"></span> лет на рынке</h1>
+								<p>работаем с 2012 года</p>
+							</div>
+						</div>
+
+						<div class="s-adw-item">
+							<div class="col-md-3 col-sm-3">
+								<h1><span class="big-text" data-count="1000"></span> рейсов</h1>
+								<p>Более 1000 выполненных перевозок</p>
+							</div>
+						</div>
+
+						<div class="s-adw-item">
+							<div class="col-md-3 col-sm-3">
+								<h1><span  class="big-text" data-count="30"></span> партнеров</h1> 
+								<p>Более 30 довольных партнеров</p>
+							</div>
+						</div>
+
+						<div class="s-adw-item">
+							<div class="col-md-3 col-sm-3">
+								<h1><span  class="big-text" data-count="250000"></span> км</h1>
+								<p>Более 250 000 пройденных километров</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+	</header>
+
+
+	<main class=" s-wide s-dark s-adw">
+		<div class="container s-wide">
+			<div class="row ">
+				<div class="col-md-6 hidden-sm hidden-xs">	
+					<div class="img-wrap">
+						<img src="img/ii.png">
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="text-wrap">
+						<h2>О компании</h2> 
+						<p>Наша компания начиная с 2012г. осуществляет перевозки грузов по Республике Беларусь, г. Минску и в страны СНГ. Большой опыт работы, опытные водители и собственные авто позволяют нам гарантировать качество и безопасность перевозки товара. За это время  мы заслужили доверие многих, заслужим и Ваше. Потому что:</p>
+						<ul>
+							<li><i class="fa fa-check-square" aria-hidden="true"></i> Работаем без предоплаты, без выходных
+							</li>
+							<li><i class="fa fa-check-square" aria-hidden="true"></i>Все виды загрузок, 20 тонн
+							</li>
+							<li><i class="fa fa-check-square" aria-hidden="true"></i> Опытные водители
+							</li>
+							<li><i class="fa fa-check-square" aria-hidden="true"></i> Хорошие цены
+							</li>
+							<li><i class="fa fa-check-square" aria-hidden="true"></i><span class="big-text">Скидки</span> на дальние расстояния и постоянным клиентам
+							</li>
+						</ul>
+						<button class="btn-table">Технические характеристики грузового автомобиля  <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+
+						</button>
+						<div class="auto-info">
+							<table>
+
+								<tr> 
+									<th>Грузоподъёмность (тонны) </th>
+									<td> 20 </td>
+								</tr> 
+								<tr>
+									<th>Полезный объем (м. куб)</th>
+									<td>92</td>
+								</tr>
+								<tr>
+									<th>Внутренняя высота кузова (метры)</th>
+									<td>2.4</td>
+								</tr>
+								<tr>
+									<th>Внутренняя ширина кузова (метры)</th>
+									<td>2.4</td>
+								</tr>
+								<tr>
+									<th>Внутренняя длина кузова (метры)</th>
+									<td>13.6</td>
+								</tr>
+								<tr>
+									<th>Количество евро палет</th>
+									<td>33</td>
+								</tr>
+								<tr>
+									<th>Рефрижераторная установка </th>
+									<td>нет</td>
+								</tr>
+								<tr>
+									<th>Кол-во пассажиров </th>
+									<td>2</td>
+								</tr>
+
+							</table>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<section class="price">
+		<div class="conrainner">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="price-wrap">
+						<p>24/7</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="price-wrap">
+						<p>2 руб/км!</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="price-wrap">
+						<p> СКИДКИ!</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	
+	<div class="conrainner price-cnow">
+		<div class="row">
+			
+			<div class="col-md-12">
+				<button class="btn-contact ">Узнать точную стоимость</button>
+				<p>Свяжитесь с нами, чтобы узнать точную цену и получить скидку</p>
+			</div>
+		</div>
+	</div> 
+	
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				
+				<div class="footer-wrap">
+					<nav class="main-mnu footer-nav hidden-md hidden-sm hidden-xs">
+						<ul>
+							<li class="active"><a href="#" >В начало</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="raw-small">
+			
+			<div class="col-md-4">
+				<div class="footer-wrap">
+					<p>Связаться с нами <br>
+						тел. (viber) +375(29)-6795766
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-wrap">
+					<p>Мы в соц. сетях:
+						вк
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-wrap">
+					<p>Права защищены. Разработка сайта LesiaEtc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Load CSS -->
+<script>
+	function loadCSS(hf) {
+		var ms=document.createElement("link");ms.rel="stylesheet";
+		ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+	}
+		loadCSS("_header.css"); //Header Styles (compress & paste to header after release)
+		loadCSS("_main.css");   //User Styles + Media Queries
+	</script>
+
+	<!-- Load Scripts -->
+	<script>var scr = {"scripts":[
+	{"src" : "js/libs.js", "async" : false},
+	{"src" : "js/common.js", "async" : false}
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+</script>
+
+</body>
+
+</html>

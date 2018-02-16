@@ -1,0 +1,96 @@
+@import "../bourbon/_bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.phone
+		text-align: right
+		padding-right: 20px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.logo, .phone
+		text-align: center
+	.logo
+		margin: 0 auto
+	.big-text
+		font-size: em(16px)!important
+		margin: 0
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+	.toggle-mnu
+		margin-right: em(20px)
+	
+	
+	.header-content
+		>ul
+			font-size: em(13px)
+
+	
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.hidden-sm
+		display: none
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.header-content
+		h1
+			width: 100%
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+	.header-content
+		width: em(500px)
