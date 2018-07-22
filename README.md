@@ -1,2 +1,2 @@
 # gruz
-Сайт по грузоперевозкам html+css+js
+Сайт по грузоперевозкам html+scss+js+bourbon
